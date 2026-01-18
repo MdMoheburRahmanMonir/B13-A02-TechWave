@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechWave</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body> 
- 
+
+<body>
+    <header class="mainBGcolor h-[92px] text-white">
+        <nav class="max-width flex justify-between text-center items-center h-full">
+            <h1 class="self-center text-4xl font-bold ">Tech<span class="spanColor">Wave</span></h1>
+            <!-- this div will hidden. When we use this design in phone then 3Line will show with menu item & there is also x button -->
+            <div class="threeline">
+                <input type="checkbox" name="button" id="button"> 
+                <label for="button" class="barsicon"> </label>
+            </div>
+            <ul class="menu flex gap-8 justify-between items-center text-[1rem] cursor-pointer">
+                <li>About</li>
+                <li>Episodes</li>
+                <li>Host</li>
+            </ul>
+            <button class="linear btn">Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+        </nav>
+    </header>
+    <main> 
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
