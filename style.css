@@ -421,9 +421,8 @@
         padding: 10px 0px;
     }
 
-    .menu {
-        transition: .5s;
-        display: none;
+    .menu {  
+        display: none; 
     }
 
 
