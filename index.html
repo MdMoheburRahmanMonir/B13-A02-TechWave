@@ -32,19 +32,19 @@
             <div class="max-width   section1M  ">
                 <div class="innerDiv py-[110px] ">
                     <div
-                        class="innerImgDiv w-[22rem] flex justify-center aspect-square bg-amber-300 rounded-full items-center mb-10">
-                        <img src="./assets/microphone.png" alt="" style="width: 35%; height: 60%;">
+                        class="innerImgDiv w-[22rem] flex justify-center aspect-square rounded-full items-center mb-10">
+                        <img src="./assets/microphone.png" alt="" class="HeroImg" style="width: 35%; height: 60%;">
                     </div>
                     <h1 class="text-6xl text-white font-bold">TechWave</h1>
                     <p class="text-[1rem]  font-normal text-white text-center mb-6 mt-1.5">Your daily dose of tech
                         insights, productivity hacks, and personal growth</p>
                     <div class="flex flex-row gap-5">
-                        <button
-                            class="text-white flex px-5 py-3 align-middle linear rounded-3xl font-bold cursor-pointer"><img
-                                src="./assets/spotify.png">&nbsp; Listen on Spotify</button>
-                        <button
-                            class=" flex px-5 py-3 align-middle font-bold text-green-500 rounded-3xl border-2 border-green-500"><img
-                                src="./assets/message.png" alt="">&nbsp; Subscribe </button>
+                        <button class="buttonText text-white flex px-3 py-3 align-middle linear rounded-3xl font-bold cursor-pointer">
+                            <i class="fa-brands fa-spotify text-2xl"></i>&nbsp; Listen on Spotify
+                        </button>
+                        <button class="buttonText flex px-5 py-3 align-middle font-bold text-green-500 rounded-3xl border-2 border-green-500">
+                           <i class="fa-solid fa-envelope text-2xl"></i>&nbsp; Subscribe 
+                        </button>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                         Join thousands of young professionals and tech enthusiasts who start their day with TechWave.
                     </p>
                 </div>
-                <div class="flex gap-[80px] justify-center ">
+                <div class="flex gap-[80px] justify-center flex-wrap">
                     <div>
                         <h1 class="mb-[16px] text-5xl font-bold text-green-500">150K+</h1>
                         <p class="text-[16px] text-white ">MONTHLY LISTENERS</p>
@@ -87,8 +87,8 @@
                 <div>
                     <h1 class="text-5xl text-white font-bold">Why Choose TechWave</h1>
                 </div>
-                <div class="grid grid-cols-3 grid-rows-3 gap-[30px] text-start ">
-                    <div class="card1bg row-span-2 p-[40px] rounded-[40px]  ">
+                <div class="CardParent grid sm:grid-cols-3 lg:grid-cols-3 grid-cals-1 grid-rows-3 gap-[30px] text-start ">
+                    <div class="Card1 card1bg sm:row-span-2 row-span-1 p-[40px] rounded-[40px]  ">
                         <img src="./assets/headphone.png" alt="" height="60px" width="60px" class="mb-4">
                         <h2 class="text-[24px] font-bold mb-4">Premium Audio Quality</h2>
                         <p class="text-[16px] leading-6">Experience crystal-clear sound with professional-grade
@@ -96,19 +96,19 @@
                             engineering. Every episode is mastered for optimal listening across all devices and
                             platforms.F</p>
                     </div>
-                    <div class="card1bg col-span-2 p-[40px] rounded-[40px]">
+                    <div class="Card2 card1bg sm:col-span-2 col-span-1 p-[40px] rounded-[40px]">
                         <img src="./assets/device.png" alt="" height="60px" width="50px" class="mb-4">
                         <h2 class="text-[24px] font-bold leading-6 mb-4">Mobile Friendly</h2>
                         <p class="text-[16px] leading-6">Listen on the go with seamless mobile experience and offline
                             downloads.</p>
                     </div>
-                    <div class="card1bg col-span-2 p-[40px] rounded-[40px]">
+                    <div class="Card3 card1bg sm:col-span-2 col-span-1 p-[40px] rounded-[40px]">
                         <img src="./assets/location.png" alt="" height="60px" width="60px" class="mb-4">
                         <h2 class="text-[24px] font-bold leading-6 mb-4">Global Community</h2>
                         <p class="text-[16px] leading-6">Connect with tech enthusiasts from over 120 countries
                             worldwide.</p>
                     </div>
-                    <div class="card1bg col-span-2 p-[40px] rounded-[40px]">
+                    <div class="Card4 card1bg sm:col-span-2 col-span-1 p-[40px] rounded-[40px]">
                         <img src="./assets/flash-icon.png" alt="" height="60px" width="60px" class="mb-4">
                         <h2 class="text-[24px] font-bold leading-6 mb-4">Exclusive Interviews</h2>
                         <p class="text-[16px] leading-6">Get unprecedented access to industry titans, startup founders,
@@ -116,7 +116,7 @@
                             secures exclusive conversations you won't find anywhere else, diving deep into their
                             journeys, failures, and success strategies.</p>
                     </div>
-                    <div class="card1bg  p-[40px] rounded-[40px]">
+                    <div class="Card5 card1bg  p-[40px] rounded-[40px]">
                         <img src="./assets/resource.png" alt="" height="60px" width="60px" class="mb-4">
                         <h2 class="text-[24px] font-bold leading-6 mb-4">Rich Resources</h2>
                         <p class="text-[16px] leading-6">Access show notes, transcripts, and additional learning
@@ -132,7 +132,7 @@
                         <div>
                             <h1 class="text-5xl text-white mb-[40px] font-bold">Featured Episodes</h1>
                         </div>
-                        <div class="flex gap-[30px] text-start ">
+                        <div class="PotcustDiv sm:flex gap-[40px] ">
                             <div class="bg-[#250D44] rounded-2xl">
                                 <iframe class="aspect-video rounded-t-2xl" width="380"
                                     src="https://www.youtube.com/embed/muBBYZXYgoM?si=MI_1F5MRdrp6ChjR"
@@ -186,22 +186,27 @@
                 </div>
                 <div>
                     <h1 class="text-5xl text-white font-bold mb-[40px]">Meet the Host</h1>
-                    <div class="bg-[#250D44] flex rounded-4xl gap-6 text-start p-[40px] ">
-                        <div class="flex justify-center hostImagediv">
-                            <img src="./assets/host.png" alt="" class="hostImage" width="100%" height="100%">
+                    <div class="HostMainDvi bg-[#250D44] flex rounded-4xl gap-6 text-start p-[40px] ">
+                        <div class="hostImagediv sm:flex flex sm:justify-center sm:m-[0px] m-auto">
+                            <img src="./assets/host.png" alt="" class="hostImage " width="100%" height="100%">
                         </div>
                         <div>
                             <h1 class="text-[32px] text-white mb-[16px] font-bold">Alex Kumar</h1>
-                            <p class="text-[16px] leading-[24px] text-white mb-[16px] " >Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech
+                            <p class="text-[16px] leading-[24px] text-white mb-[16px] ">Tech entrepreneur, productivity
+                                expert, and lifelong learner. Alex has been in the tech
                                 industry for over 10 years, working with startups and Fortune 500 companies. Through
                                 TechWave, Alex shares insights from industry leaders and practical advice for anyone
                                 looking
                                 to grow in tech.</p>
                             <ul class="flex gap-2 ">
-                                <li class="text-2xl text-[#0077B5] cursor-pointer"><i class="fa-brands fa-linkedin"></i></li>
-                                <li class="text-2xl text-[#1DA1F2] cursor-pointer"><i class="fa-brands fa-twitter"></i></li>
-                                <li class="text-2xl text-[#C13584] cursor-pointer"><i class="fa-brands fa-instagram"></i></li>
-                                <li class="text-2xl text-[#FF0000]  cursor-pointer"><i class="fa-brands fa-youtube"></i></li>
+                                <li class="text-2xl text-[#0077B5] cursor-pointer"><i class="fa-brands fa-linkedin"></i>
+                                </li>
+                                <li class="text-2xl text-[#1DA1F2] cursor-pointer"><i class="fa-brands fa-twitter"></i>
+                                </li>
+                                <li class="text-2xl igcolor cursor-pointer"><i
+                                        class="fa-brands fa-instagram"></i></li>
+                                <li class="text-2xl text-[#FF0000]  cursor-pointer"><i class="fa-brands fa-youtube"></i>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -209,8 +214,17 @@
             </div>
         </section>
     </main>
-    <footer>
-        
+    <footer class="footer">
+        <section class="max-width flex flex-col text-white text-center py-[120px]">
+            <h1 class="text-5xl font-bold mb-[32px]">Tech<span class="spanColor">Wave</span></h1>
+            <ul class="footerUl flex justify-center mb-[32px] gap-10 flex-wrap">
+                <li class="text-[16px]"><i class="fa-brands fa-spotify"></i> Spotify</li>
+                <li class="text-[16px]"><i class="fa-solid fa-podcast"></i> Apple Podcasts</li>
+                <li class="text-[16px]"><i class="fa-brands fa-youtube"></i> YouTube</li>
+                <li class="text-[16px]"><i class="fa-brands fa-twitter"></i> Twitter</li>
+            </ul>
+            <p>&copy; 2026 TechWave Podcast. All rights reserved.</p>
+        </section>
     </footer>
 </body>
 <script src="https://cdn.tailwindcss.com"></script>

@@ -19,6 +19,7 @@
     --mainW: 1200px;
     --linear: linear-gradient(90deg, #F7E93F 0%, #FB09B4 50%, #9100F8 100%);
     --cardcolor: rgba(53, 17, 101, 0.4);
+    --igcolor: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
 
 .max-width {
@@ -33,9 +34,19 @@
 .linear {
     background: var(--linear);
 }
-.card1bg{
+
+.card1bg {
     background-color: var(--cardcolor);
 }
+
+.igcolor {
+    background: var(--igcolor);
+    background-color: pink;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 /* Random classes selection area.I will defined all random classes from here. */
 /* Nav section design area */
 .spanColor {
@@ -46,6 +57,10 @@
     color: transparent;
 }
 
+.buttonText {
+    align-items: center;
+}
+
 .btn {
     height: 44px;
     width: 135px;
@@ -54,51 +69,84 @@
     border-radius: 40px;
     font-size: 1rem;
     text-align: center;
-} 
+}
+
 .threeline {
     display: none;
 }
 
 /* Nav section design completed */
-/* Section1 design area start */ 
-.section1M{
+/* Section1 design area start */
+.section1M {
     background-image: url(./assets/hero-bg.png);
     background-position: center;
     height: 760px;
     max-width: 1600px;
-    background-size:  auto;
+    background-size: auto;
     margin: 0 auto;
-    background-repeat: no-repeat; 
-    background-color: #fff;  
+    background-repeat: no-repeat;
+    background-color: #fff;
 }
- 
-.innerDiv{ 
+
+.innerDiv {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     height: 558px;
-    width: 550px;width: 100%;
+    width: 550px;
+    width: 100%;
 }
-.innerImgDiv{
+
+.innerImgDiv {
     background-image: url(./assets/hero-circle.png);
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
- .cardImgSize{
+
+.HeroImg {
+    position: relative;
+}
+
+.innerImgDiv::before {
+    content: 'NEW';
+    position: absolute;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    top: 0;
+    right: 20px;
+    height: 40px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: #00FF88;
+    box-shadow: 0 0 20px #00FF88;
+}
+
+.cardImgSize {
     height: 60px;
     width: 60px;
- }
-.hostImagediv{
+}
+
+.hostImagediv {
     width: 430px;
     height: 200px;
 }
- 
-.hostImage{
-    width: 100%;
+
+.hostImage {
+    width: 430px;
     height: 100%;
     object-fit: cover;
 }
 
+/* Footer section start here */
+.footer {
+    background-image: url(./assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 
 
 
@@ -220,10 +268,55 @@
 
     /* Nav section design area completed. */
 
-   
+    /* Podcast video section  */
+
+    .PotcustDiv {
+        display: flex;
+
+    }
+
+    .PotcustDiv div {
+        margin: 10px;
+    }
+
+    .PotcustDiv div div {
+        text-align: start;
+    }
+
+    .PotcustDiv div iframe {
+        width: 100%;
+    }
+
+    /* Podcast video section closed */
+    /* Host Section Responsive design start */
+    .HostMainDvi {
+        margin: 0 10px;
+    }
+
+    .hostImage {
+        width: 200px;
+        margin: auto;
+        height: 100%;
+    }
+
+    .HostMainDvi .hostImagediv {
+        margin: auto;
+    }
+    .CardParent div {
+        padding: 20px;
+    }
+    /* Host Section design completed */
+    /* Footer responsive area */
+    .footerUl{
+        padding: 0 70px;
+    } 
+    /* Footer responsive completed */
+
 }
 
-@media screen and (min-width: 577px) and (max-width:768px) {
+@media screen and (max-width: 992px) {
+
+
     .navSection {
         padding: 0 15px;
     }
@@ -335,4 +428,84 @@
         width: 100%;
         border-radius: 5px;
     }
+
+    /* Nav responsive design area completed */
+    /* Card section area */
+    .CardParent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    .CardParent div {
+        padding: 30px;
+    }
+    
+    .CardParent .Card1{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .CardParent .Card2{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .CardParent .Card3{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .CardParent .Card4{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .CardParent .Card5{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    
+    /* Card section area closed*/
+
+    /* Podcast video section */
+    .PotcustDiv {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .PotcustDiv div {
+        margin: 10px;
+    }
+
+    .PotcustDiv div div {
+        text-align: start;
+    }
+
+    .PotcustDiv div iframe {
+        width: 100%;
+    }
+
+    /* Podcast video section closes */
+    /* Host section start  */
+    .hostImage {
+        width: 200px;
+        height: 100%;
+        margin: auto;
+    }
+
+    .HostMainDvi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .HostMainDvi .hostImagediv {
+        margin: auto;
+    }
+
+    .HostMainDvi {
+        margin: 0 10px;
+    }
+
+    /* Host section completed area */
+
 }
