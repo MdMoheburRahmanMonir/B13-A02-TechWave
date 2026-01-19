@@ -18,7 +18,7 @@
     --bgColor: #1A0B2E;
     --mainW: 1200px;
     --linear: linear-gradient(90deg, #F7E93F 0%, #FB09B4 50%, #9100F8 100%);
-
+    --cardcolor: rgba(53, 17, 101, 0.4);
 }
 
 .max-width {
@@ -33,7 +33,9 @@
 .linear {
     background: var(--linear);
 }
-
+.card1bg{
+    background-color: var(--cardcolor);
+}
 /* Random classes selection area.I will defined all random classes from here. */
 /* Nav section design area */
 .spanColor {
@@ -52,117 +54,285 @@
     border-radius: 40px;
     font-size: 1rem;
     text-align: center;
-}
-.threeline{
+} 
+.threeline {
     display: none;
 }
+
 /* Nav section design completed */
-
-
-
-
-
+/* Section1 design area start */ 
+.section1M{
+    background-image: url(./assets/hero-bg.png);
+    background-position: center;
+    height: 760px;
+    max-width: 1600px;
+    background-size:  auto;
+    margin: 0 auto;
+    background-repeat: no-repeat; 
+    background-color: #fff;  
+}
+ 
+.innerDiv{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 558px;
+    width: 550px;width: 100%;
+}
+.innerImgDiv{
+    background-image: url(./assets/hero-circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ .cardImgSize{
+    height: 60px;
+    width: 60px;
+ }
+.hostImagediv{
+    width: 430px;
+    height: 200px;
+}
+ 
+.hostImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
 
 /* Media query less then 576px  */
 @media screen and (max-width: 576px) {
-     /*Nav section area  */
-    input{
-    display: none;
-    color: red;
- }
 
-.threeline{
-    display: block;
-}
+    /*Nav section area  */
+    .navSection {
+        padding: 0 15px;
+    }
 
-.barsicon{
-    display: flex; 
-    height: 20px;
-    width: 20px;  
-    position: relative;
-}
-.barsicon::before{
-    content: " ";
-    position: absolute;
-    top: 2px;
-    transition: .5s;
-    left: 0px;
-    background-color: white;
-    box-shadow: 0px 7px 0px white;
-    height: 2px;
-    width: 20px;
-    border-radius: 1px;
-}
-.barsicon::after{ 
-    border-radius: 1px;
-    content: " ";
-    position: absolute;
-    transition: .5s;
-    bottom: 2px;
-    left: 0px;
-    background-color: white;
-    height: 2px;
-    width: 20px;
-}
-nav:has(input:checked) .barsicon::before{
-    content: " ";
-    position: absolute;
-    transition: .5s;
-    top: 7px;
-    left: 0px;
-    background-color: white; 
-    transform: rotate(50deg);
-    box-shadow: 0 0 0 black;
-    height: 2px;
-    width: 20px;
-    border-radius: 1px;
-}
-nav:has(input:checked) .barsicon::after{ 
-    border-radius: 1px;
-    content: " ";
-    position: absolute;
-    transform: rotate(135deg);
-    transition: .5s;
-    top: 7px;
-    left: 0px;
-    background-color: white;
-    height: 2px;
-    width: 20px;
-}
-  
-.btn{
-    display: none;
-}
-nav:has(input:checked) .menu{
-    position: absolute;
-    top: 40px;
-    right: 30px; 
-    height: 100px;
-    width: 100px;
-    background-color: white;
-    color: black;
-    padding: 0;
-    transition: .5s;
-    display: flex;
-    font-size: 16px;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 2px;
-    border-radius: 10px;
-    padding: 10px 0px;
-}
-.menu{
-    transition: .5s;
-    display: none;
-}
-nav{
-    padding: 0 5px;
-}
-/* Nav section design area completed. */
+    .menu {
+        padding: 0 15px;
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    input {
+        display: none;
+        color: red;
+    }
+
+    .threeline {
+        display: block;
+    }
+
+    .barsicon {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        position: relative;
+    }
+
+    .barsicon::before {
+        content: " ";
+        position: absolute;
+        top: 2px;
+        transition: .5s;
+        left: 0px;
+        background-color: white;
+        box-shadow: 0px 7px 0px white;
+        height: 2px;
+        width: 20px;
+        border-radius: 1px;
+    }
+
+    .barsicon::after {
+        border-radius: 1px;
+        content: " ";
+        position: absolute;
+        transition: .5s;
+        bottom: 2px;
+        left: 0px;
+        background-color: white;
+        height: 2px;
+        width: 20px;
+    }
+
+    nav:has(input:checked) .barsicon::before {
+        content: " ";
+        position: absolute;
+        transition: .5s;
+        top: 7px;
+        left: 0px;
+        background-color: white;
+        transform: rotate(50deg);
+        box-shadow: 0 0 0 black;
+        height: 2px;
+        width: 20px;
+        border-radius: 1px;
+    }
+
+    nav:has(input:checked) .barsicon::after {
+        border-radius: 1px;
+        content: " ";
+        position: absolute;
+        transform: rotate(135deg);
+        transition: .5s;
+        top: 7px;
+        left: 0px;
+        background-color: white;
+        height: 2px;
+        width: 20px;
+    }
 
 
+    nav:has(input:checked) .menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        color: black;
+        padding: 0;
+        transition: .5s;
+        display: flex;
+        font-size: 16px;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 2px;
+        border-radius: 10px;
+        padding: 10px 0px;
+    }
 
+    .menu {
+        transition: .5s;
+        display: none;
+    }
+
+    nav ul li:hover {
+        background-color: #e7d7d7;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    /* Nav section design area completed. */
+
+   
+}
+
+@media screen and (min-width: 577px) and (max-width:768px) {
+    .navSection {
+        padding: 0 15px;
+    }
+
+    .menu {
+        padding: 0 30px;
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    input {
+        display: none;
+        color: red;
+    }
+
+    .threeline {
+        display: block;
+    }
+
+    .barsicon {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        position: relative;
+    }
+
+    .barsicon::before {
+        content: " ";
+        position: absolute;
+        top: 2px;
+        transition: .5s;
+        left: 0px;
+        background-color: white;
+        box-shadow: 0px 7px 0px white;
+        height: 2px;
+        width: 20px;
+        border-radius: 1px;
+    }
+
+    .barsicon::after {
+        border-radius: 1px;
+        content: " ";
+        position: absolute;
+        transition: .5s;
+        bottom: 2px;
+        left: 0px;
+        background-color: white;
+        height: 2px;
+        width: 20px;
+    }
+
+    nav:has(input:checked) .barsicon::before {
+        content: " ";
+        position: absolute;
+        transition: .5s;
+        top: 7px;
+        left: 0px;
+        background-color: white;
+        transform: rotate(50deg);
+        box-shadow: 0 0 0 black;
+        height: 2px;
+        width: 20px;
+        border-radius: 1px;
+    }
+
+    nav:has(input:checked) .barsicon::after {
+        border-radius: 1px;
+        content: " ";
+        position: absolute;
+        transform: rotate(135deg);
+        transition: .5s;
+        top: 7px;
+        left: 0px;
+        background-color: white;
+        height: 2px;
+        width: 20px;
+    }
+
+
+    nav:has(input:checked) .menu {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        color: black;
+        padding: 0;
+        transition: .5s;
+        display: flex;
+        font-size: 16px;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 2px;
+        border-radius: 10px;
+        padding: 10px 0px;
+    }
+
+    .menu {
+        transition: .5s;
+        display: none;
+    }
+
+    nav ul li:hover {
+        background-color: #e7d7d7;
+        width: 100%;
+        border-radius: 5px;
+    }
 }
