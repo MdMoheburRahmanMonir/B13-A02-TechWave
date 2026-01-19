@@ -302,14 +302,17 @@
     .HostMainDvi .hostImagediv {
         margin: auto;
     }
+
     .CardParent div {
         padding: 20px;
     }
+
     /* Host Section design completed */
     /* Footer responsive area */
-    .footerUl{
+    .footerUl {
         padding: 0 70px;
-    } 
+    }
+
     /* Footer responsive completed */
 
 }
@@ -423,6 +426,7 @@
         display: none;
     }
 
+
     nav ul li:hover {
         background-color: #e7d7d7;
         width: 100%;
@@ -432,9 +436,8 @@
     /* Nav responsive design area completed */
     /* Card section area */
     .CardParent {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: column;
         margin: 20px;
         gap: 30px;
     }
@@ -442,28 +445,7 @@
     .CardParent div {
         padding: 30px;
     }
-    
-    .CardParent .Card1{
-        grid-row: span 1;
-        grid-column: span 1;
-    }
-    .CardParent .Card2{
-        grid-row: span 1;
-        grid-column: span 1;
-    }
-    .CardParent .Card3{
-        grid-row: span 1;
-        grid-column: span 1;
-    }
-    .CardParent .Card4{
-        grid-row: span 1;
-        grid-column: span 1;
-    }
-    .CardParent .Card5{
-        grid-row: span 1;
-        grid-column: span 1;
-    }
-    
+
     /* Card section area closed*/
 
     /* Podcast video section */
@@ -509,3 +491,4 @@
     /* Host section completed area */
 
 }
+ 
