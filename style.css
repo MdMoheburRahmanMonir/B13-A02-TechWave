@@ -150,7 +150,7 @@
 
 .hostImagediv {
     width: 430px;
-    height: 200px;
+    aspect-ratio: 1/1;
 }
 
 .hostImage {
@@ -167,9 +167,7 @@
     background-size: cover;
 
 }
-
-
-
+ 
 /* Media query less then 576px  */
 @media screen and (max-width: 576px) {
 
@@ -315,9 +313,9 @@
 
     .hostImage {
         width: 100px; 
-        height: 100%;
-    }
-
+        height: 100%;  
+        display: flex;
+    } 
      .HostMainDvi {  
         flex-direction: row;
     }
@@ -492,8 +490,8 @@
     /* Podcast video section closes */
     /* Host section start  */
     .hostImage {
-        width: 200px;
-        height: 100%; 
+        width: 90%;
+        height: 90%; 
     }
 
     .HostMainDvi {
