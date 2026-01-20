@@ -57,10 +57,19 @@
     color: transparent;
 }
 
-.buttonText {
+ 
+.buttonText  { 
     align-items: center;
-}
 
+} 
+.btnTextDesign2:hover{
+    border: 2px solid var(--linear);
+    background: var(--linear);
+}
+.btnTextDesign1:hover{
+    background: var(--bgColor);
+    border: 2px solid  #22c55e;
+}
 .btn {
     height: 44px;
     width: 135px;
@@ -69,6 +78,10 @@
     border-radius: 40px;
     font-size: 1rem;
     text-align: center;
+}
+.headerbtn:hover{
+    background: var(--bgColor);
+    border: 2px solid #22c55e;
 }
 
 .threeline {
@@ -108,6 +121,11 @@
     position: relative;
 }
 
+.innerImgDiv:hover::before {
+    background: var(--linear);
+    box-shadow: 0 0 20px white;
+    color: white;
+}
 .innerImgDiv::before {
     content: 'NEW';
     position: absolute;
@@ -421,8 +439,8 @@
         padding: 10px 0px;
     }
 
-    .menu {  
-        display: none; 
+    .menu {
+        display: none;
     }
 
 
@@ -448,6 +466,10 @@
     /* Card section area closed*/
 
     /* Podcast video section */
+    .PodcastAboutDiv div {
+        padding: 0 50px;
+    }
+
     .PotcustDiv {
         display: flex;
         flex-direction: column;
@@ -490,4 +512,3 @@
     /* Host section completed area */
 
 }
- 
