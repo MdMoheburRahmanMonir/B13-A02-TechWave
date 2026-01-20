@@ -13,7 +13,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.body{
+    /* overflow: hidden; */
+}
 :root {
     --bgColor: #1A0B2E;
     --mainW: 1200px;
@@ -312,13 +314,12 @@
     }
 
     .hostImage {
-        width: 200px;
-        margin: auto;
+        width: 100px; 
         height: 100%;
     }
 
-    .HostMainDvi .hostImagediv {
-        margin: auto;
+     .HostMainDvi {  
+        flex-direction: row;
     }
 
     .CardParent div {
@@ -492,8 +493,7 @@
     /* Host section start  */
     .hostImage {
         width: 200px;
-        height: 100%;
-        margin: auto;
+        height: 100%; 
     }
 
     .HostMainDvi {
